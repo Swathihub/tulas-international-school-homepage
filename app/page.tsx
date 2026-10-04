@@ -9,7 +9,7 @@ import { ScrollProgress } from "@/components/ui/scroll-progress";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-zinc-50 dark:bg-zinc-950 font-sans selection:bg-green-500/30">
+    <div className="min-h-screen bg-slate-50 dark:bg-royal-950 font-sans selection:bg-gold-500/30">
       <ScrollProgress />
       <Navbar />
       <main>
@@ -23,3 +23,5 @@ export default function Home() {
     </div>
   );
 }
+
+

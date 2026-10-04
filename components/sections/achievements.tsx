@@ -23,7 +23,7 @@ const achievements = [
 
 export const Achievements = () => {
   return (
-    <section className="py-24 bg-white dark:bg-zinc-950 overflow-hidden">
+    <section className="py-24 bg-white dark:bg-royal-950 overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="w-full lg:w-1/2">
@@ -33,13 +33,13 @@ export const Achievements = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-green-600 font-semibold tracking-wider uppercase mb-3 text-sm">
+              <h2 className="text-gold-600 font-semibold tracking-wider uppercase mb-3 text-sm">
                 Our Pride
               </h2>
-              <h3 className="text-4xl md:text-5xl font-bold text-zinc-900 dark:text-zinc-50 mb-6 leading-tight">
+              <h3 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-50 mb-6 leading-tight">
                 A Legacy of Excellence.
               </h3>
-              <p className="text-lg text-zinc-600 dark:text-zinc-400 mb-8">
+              <p className="text-lg text-slate-600 dark:text-slate-400 mb-8">
                 Over the years, Tula&apos;s International School has carved a niche for itself by setting new benchmarks in education, sports, and co-curricular activities.
               </p>
 
@@ -53,15 +53,15 @@ export const Achievements = () => {
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                     className="flex gap-6 border-l-2 border-green-200 dark:border-green-900/50 pl-6 relative"
                   >
-                    <div className="absolute w-3 h-3 bg-green-500 rounded-full -left-[7px] top-2" />
+                    <div className="absolute w-3 h-3 bg-gold-500 rounded-full -left-[7px] top-2" />
                     <div>
-                      <span className="text-sm font-bold text-green-600 bg-green-50 dark:bg-green-900/20 px-3 py-1 rounded-full mb-3 inline-block">
+                      <span className="text-sm font-bold text-gold-600 bg-green-50 dark:bg-green-900/20 px-3 py-1 rounded-full mb-3 inline-block">
                         {achievement.year}
                       </span>
-                      <h4 className="text-xl font-bold text-zinc-900 dark:text-zinc-50 mb-2">
+                      <h4 className="text-xl font-bold text-slate-900 dark:text-slate-50 mb-2">
                         {achievement.title}
                       </h4>
-                      <p className="text-zinc-600 dark:text-zinc-400">
+                      <p className="text-slate-600 dark:text-slate-400">
                         {achievement.description}
                       </p>
                     </div>
@@ -99,3 +99,5 @@ export const Achievements = () => {
     </section>
   );
 };
+
+

@@ -6,14 +6,14 @@ import Link from "next/link";
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-zinc-950">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-royal-950">
       {/* Background with overlay */}
       <div 
         className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2940&auto=format&fit=crop')] bg-cover bg-center bg-no-repeat"
         style={{ backgroundPosition: "center 30%" }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40" />
-      <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-royal-950 via-transparent to-transparent" />
 
       <div className="container mx-auto px-6 md:px-12 relative z-10 pt-20">
         <div className="max-w-3xl">
@@ -22,7 +22,7 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeOut" }}
           >
-            <span className="inline-block py-1 px-3 rounded-full bg-green-600/20 text-green-400 text-sm font-semibold tracking-wider uppercase mb-6 border border-green-500/30">
+            <span className="inline-block py-1 px-3 rounded-full bg-gold-600/20 text-gold-400 text-sm font-semibold tracking-wider uppercase mb-6 border border-gold-500/30">
               Welcome to Tula&apos;s
             </span>
           </motion.div>
@@ -33,12 +33,12 @@ export const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
           >
-            Empowering <span className="text-green-500">Minds</span>,<br />
+            Empowering <span className="text-gold-500">Minds</span>,<br />
             Transforming Futures.
           </motion.h1>
           
           <motion.p 
-            className="text-lg md:text-xl text-zinc-300 mb-10 max-w-2xl leading-relaxed"
+            className="text-lg md:text-xl text-slate-300 mb-10 max-w-2xl leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
@@ -54,7 +54,7 @@ export const Hero = () => {
           >
             <Link 
               href="#admissions" 
-              className="group flex items-center justify-center gap-2 bg-green-600 hover:bg-green-500 text-white px-8 py-4 rounded-full font-medium transition-all"
+              className="group flex items-center justify-center gap-2 bg-gold-600 hover:bg-gold-500 text-white px-8 py-4 rounded-full font-medium transition-all"
             >
               Start Admission Process
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={18} />
@@ -76,9 +76,9 @@ export const Hero = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
       >
-        <span className="text-zinc-400 text-sm font-medium tracking-widest uppercase">Scroll</span>
+        <span className="text-slate-400 text-sm font-medium tracking-widest uppercase">Scroll</span>
         <motion.div 
-          className="w-[1px] h-12 bg-gradient-to-b from-green-500 to-transparent"
+          className="w-[1px] h-12 bg-gradient-to-b from-gold-500 to-transparent"
           animate={{ height: ["0rem", "3rem", "0rem"], opacity: [0, 1, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
         />
@@ -86,3 +86,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+

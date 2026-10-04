@@ -13,7 +13,7 @@ const stats = [
 
 export const About = () => {
   return (
-    <section id="about" className="py-24 bg-white dark:bg-zinc-950 overflow-hidden">
+    <section id="about" className="py-24 bg-white dark:bg-royal-950 overflow-hidden">
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
@@ -33,7 +33,7 @@ export const About = () => {
                 className="object-cover"
                 sizes="(max-w-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 border-4 border-green-500/20 rounded-3xl z-10 m-4 pointer-events-none" />
+              <div className="absolute inset-0 border-4 border-gold-500/20 rounded-3xl z-10 m-4 pointer-events-none" />
             </motion.div>
             
             {/* Stats Card Overlay */}
@@ -42,14 +42,14 @@ export const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="absolute -bottom-8 -right-4 md:right-8 bg-zinc-900 text-white p-6 md:p-8 rounded-2xl shadow-xl z-20 w-[85%] md:w-auto"
+              className="absolute -bottom-8 -right-4 md:right-8 bg-royal-900 text-white p-6 md:p-8 rounded-2xl shadow-xl z-20 w-[85%] md:w-auto"
             >
               <div className="grid grid-cols-2 gap-6 md:gap-8">
                 {stats.map((stat, i) => (
                   <div key={i} className="flex flex-col gap-2">
-                    <stat.icon className="text-green-500" size={24} />
+                    <stat.icon className="text-gold-500" size={24} />
                     <span className="text-3xl font-bold">{stat.value}</span>
-                    <span className="text-xs text-zinc-400 font-medium uppercase tracking-wider">{stat.label}</span>
+                    <span className="text-xs text-slate-400 font-medium uppercase tracking-wider">{stat.label}</span>
                   </div>
                 ))}
               </div>
@@ -64,15 +64,15 @@ export const About = () => {
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.6 }}
             >
-              <h2 className="text-green-600 font-semibold tracking-wider uppercase mb-3 text-sm flex items-center gap-2">
-                <span className="w-8 h-[2px] bg-green-600 inline-block"></span>
+              <h2 className="text-gold-600 font-semibold tracking-wider uppercase mb-3 text-sm flex items-center gap-2">
+                <span className="w-8 h-[2px] bg-gold-600 inline-block"></span>
                 About Tula&apos;s
               </h2>
-              <h3 className="text-4xl md:text-5xl font-bold text-zinc-900 dark:text-zinc-50 mb-6 leading-tight">
+              <h3 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-50 mb-6 leading-tight">
                 Nurturing Excellence, Shaping Character.
               </h3>
               
-              <div className="space-y-6 text-lg text-zinc-600 dark:text-zinc-400">
+              <div className="space-y-6 text-lg text-slate-600 dark:text-slate-400">
                 <p>
                   Established in 2012, Tula&apos;s International School has rapidly emerged as a leading co-educational residential school in Dehradun. Spread across a sprawling 22-acre lush green campus, we provide an environment that fosters holistic development.
                 </p>
@@ -88,9 +88,9 @@ export const About = () => {
                   "State-of-the-art Sports Infrastructure",
                   "International University Placement Cell"
                 ].map((item, i) => (
-                  <li key={i} className="flex items-center gap-3 text-zinc-800 dark:text-zinc-200 font-medium">
+                  <li key={i} className="flex items-center gap-3 text-slate-800 dark:text-slate-200 font-medium">
                     <div className="w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
-                      <div className="w-2 h-2 rounded-full bg-green-600"></div>
+                      <div className="w-2 h-2 rounded-full bg-gold-600"></div>
                     </div>
                     {item}
                   </li>
@@ -98,7 +98,7 @@ export const About = () => {
               </ul>
               
               <div className="mt-10">
-                <button className="text-green-600 font-semibold border-b-2 border-green-600 pb-1 hover:text-green-700 hover:border-green-700 transition-colors inline-flex items-center gap-2">
+                <button className="text-gold-600 font-semibold border-b-2 border-green-600 pb-1 hover:text-green-700 hover:border-green-700 transition-colors inline-flex items-center gap-2">
                   Read our full story
                 </button>
               </div>
@@ -110,3 +110,5 @@ export const About = () => {
     </section>
   );
 };
+
+

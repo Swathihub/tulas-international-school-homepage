@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const CTA = () => {
   return (
-    <section className="relative py-24 bg-green-600 overflow-hidden">
+    <section className="relative py-24 bg-gold-600 overflow-hidden">
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-10" />
       
       <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -40,7 +40,7 @@ export const CTA = () => {
           >
             <Link 
               href="#apply" 
-              className="group flex items-center justify-center gap-2 bg-white text-green-700 hover:bg-zinc-50 px-8 py-4 rounded-full font-bold text-lg transition-all"
+              className="group flex items-center justify-center gap-2 bg-white text-green-700 hover:bg-slate-50 px-8 py-4 rounded-full font-bold text-lg transition-all"
             >
               Apply Online Now
               <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
@@ -57,3 +57,5 @@ export const CTA = () => {
     </section>
   );
 };
+
+
