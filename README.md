@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tula's International School Homepage
 
-## Getting Started
+This project is a complete responsive homepage redesign for Tula's International School (TIS) built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## Features & Enhancements
 
+- **Modern & Premium Design**: Custom color palette matching TIS branding, with high-quality visual hierarchy, typography, and spacing.
+- **Scroll-Triggered Reveals**: Key sections and cards smoothly animate into view as the user scrolls, creating a dynamic, engaging experience (via Framer Motion `whileInView`).
+- **Scroll Progress Indicator**: A fixed green progress bar at the top of the screen provides intuitive feedback on page depth.
+- **Interactive Micro-animations**: Subtle hover states, staggered children animations, and smooth transitions.
+- **Responsive Layouts**: Fully responsive design adapting intentionally across mobile, tablet, and desktop viewports, rather than just scaling down.
+- **Accessible & Semantic**: Uses semantic HTML5, clear structure, and appropriate contrast ratios.
+
+## Architecture
+
+- **`app/page.tsx`**: Main entry point assembling all sections.
+- **`components/layout/`**: Contains the global `Navbar` and `Footer`.
+- **`components/sections/`**: Modular components for each section (`hero`, `about`, `programs`, `achievements`, `cta`).
+- **`components/ui/`**: Reusable UI components (like `scroll-progress`).
+- **`lib/utils.ts`**: Utility functions like `cn` for Tailwind class merging.
+
+## Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+## Setup & Development
+
+1. Clone the repository and install dependencies:
+   ```bash
+   npm install
+   ```
+
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Build & Deployment
+
+To create a production build:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To start the production server:
+```bash
+npm run start
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project is configured and ready to be deployed on Vercel or any Next.js-compatible hosting platform.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Implementation Notes
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Tailwind CSS v4**: Uses the latest Tailwind PostCSS integration.
+- **Framer Motion**: Animations are kept performant (hardware accelerated) and utilize the `useScroll` hook for the progress indicator.
+- **Lucide React**: Used for clean, consistent SVG icons throughout the design.
+- The project is fully type-checked and uses ESLint to ensure code quality.
